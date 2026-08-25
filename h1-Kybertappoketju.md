@@ -1,6 +1,23 @@
-## x)
+## x) Lue/katso/kuuntele ja tiivistä
 
-finmewpo
+  Herrasmieshakkerit(2024):
+
+- Päivittäin mietitään mitä kautta Keskoa vastaan voidaan hyökätä.
+- Keskitetty tietoturvatiimi
+
+  Hutchins et al 2011: Intelligence-Driven Computer Network Defense Informed by Analysis of Adversary Campaigns and Intrusion Kill Chains, chapters Abstract, 3.2 Intrusion Kill Chain.
+
+- Tietoverkkojen hyökkäysketjussa on seitsemän vaihetta: 1. Tiedustelu 2. Aseistaminen 3. Toimitus 4. Hyväksikäyttö 5. Asennus 6. Komento ja ohjaus 7. Tavotteiden toteuttaminen.
+
+  € Santos et al: The Art of Hacking (Video Collection): 4.3 Surveying Essential Tools for Active Reconnaissance.
+
+- Nmap on suosituin porttiskanneri
+- Masscan on nopein porttiskanneri
+- Udpprotoscanner on nopea UDP porttiskanneri
+
+  KKO 2003:36
+
+- A oli suorittanut porttiskannauksen Osuuspankkikeskus-OPK osuuskunnan tietojärjestelmään.
 
 ## a) Asenna Kali
 
