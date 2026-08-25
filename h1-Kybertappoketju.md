@@ -41,3 +41,6 @@ Nmap löysi portit, tunnisti palveluiden statuksen, nimet ja versiot.
 
 ## e) Ratkaise vapaavalintainen kone HackTheBoxista
 
+Ratkaisin koneen `Fawn`
+
+<img width="910" height="92" alt="Näyttökuva 2026-08-25 kello 17 29 06" src="https://github.com/user-attachments/assets/a9635d16-a01e-4e06-b451-52dab03ae47b" />
