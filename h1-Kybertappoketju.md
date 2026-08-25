@@ -18,4 +18,26 @@ Katkaisin verkkoyhteyden ja varmistin, ettei kone saa yhteyttä internettiin kom
 
 Ei yhteyttä.
 
-## c)
+## c) Porttiskannaa 1000 tavallisinta tcp-porttia omasta koneestasi
+
+Suoritin skannauksen komennolla `nmap -T4 -A localhost`
+
+<img width="858" height="273" alt="Näyttökuva 2026-08-25 kello 16 54 15" src="https://github.com/user-attachments/assets/c917ce06-cebd-4ea3-8a0d-cef08a888c7d" />
+
+Parametrit:
+
+- `-T4` on nmapin aggressiivinen profiili
+-  `-A` on aggressiivinen tunnistus
+
+localhost-osoitteessa ei tällä hetkellä kuunnella mitään TCP-palvelua, jotka ovat nmapin 1000 yleisimmissä porteissa.
+
+## d) Asenna kaksi vapaavalintaista demonia ja skannaa uudelleen.
+
+Minulla oli valmiiksi asennettuna ssh ja apache2 demonit. Käynnistin ne ja ajoin komennon `nmap -T4 -A localhost` uudestaan.
+
+<img width="595" height="226" alt="Näyttökuva 2026-08-25 kello 17 06 47" src="https://github.com/user-attachments/assets/71546cc9-1a4f-44bf-aae0-65143ea4ffc4" />
+
+Nmap löysi portit, tunnisti palveluiden statuksen, nimet ja versiot.
+
+## e) Ratkaise vapaavalintainen kone HackTheBoxista
+
