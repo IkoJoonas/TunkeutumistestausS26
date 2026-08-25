@@ -1,6 +1,6 @@
 ## x) Lue/katso/kuuntele ja tiivistä
 
-  Herrasmieshakkerit(2024):
+  Herrasmieshakkerit
 
 - Päivittäin mietitään mitä kautta Keskoa vastaan voidaan hyökätä.
 - Keskitetty tietoturvatiimi
