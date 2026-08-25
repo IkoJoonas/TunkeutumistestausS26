@@ -60,7 +60,7 @@ Nmap löysi portit, tunnisti palveluiden statuksen, nimet ja versiot.
 
 Ratkaisin koneen `Fawn`
 
-<img width="910" height="92" alt="Näyttökuva 2026-08-25 kello 17 29 06" src="https://github.com/user-attachments/assets/a9635d16-a01e-4e06-b451-52dab03ae47b" />
+<img width="611" height="162" alt="Näyttökuva 2026-08-25 kello 17 50 41" src="https://github.com/user-attachments/assets/1f568c4e-4fd5-4477-95e3-176a31912d13" />
 
 ## Lähteet
 
