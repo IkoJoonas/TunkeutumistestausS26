@@ -63,7 +63,7 @@ Selaimella tarkistaminen osoitti, että IP oli oikea.
 
 ## e) Porttiskannaa Metasploitable huolellisesti ja kaikki portit
 
-Ajoin komennon `nmap -A -T4 -p- 192.167.56.101`
+Ajoin komennon `nmap -A -T4 -p- 192.168.56.101`
 
 Nmap löysi paljon avoimia portteja, mutta näin heti alussa kolme kiinnostavaa porttia.
 
