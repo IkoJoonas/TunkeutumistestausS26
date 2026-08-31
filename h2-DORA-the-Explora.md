@@ -62,7 +62,7 @@ Nmap löysi paljon avoimia portteja, mutta näin heti alussa kolme kiinnostavaa 
 
 `Portti 22/tcp OpenSSH` vanha OpenSSh versio
 
-`Portti 23/tcp Telnet` vanhentunut verkko protokolla
+`Portti 23/tcp Telnet` vanhentunut verkkoprotokolla
 
 ## f) Vapaaehtoinen bonus: Sisään vaan. Pääsetkö murtautumaan Metasploitableen?
 
