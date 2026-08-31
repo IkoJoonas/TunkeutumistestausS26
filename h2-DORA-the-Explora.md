@@ -116,3 +116,19 @@ Article 27 "Requirements for testers for the carrying out of TLPT" https://eur-l
 - TIBER-FI, 5.4 Testing phase: Red team testing https://www.suomenpankki.fi/globalassets/bof/en/money-and-payments/the-bank-of-finland-as-catalyst-payments-council/tiber-fi/tiber-fi-2.0-procedures-and-guidelines.pdf
 - https://sourceforge.net/projects/metasploitable/
 - Gemini, f) kohdassa ssh-komennon saamiseen
+
+## Laitteisto
+
+Käytin tehtävissä Kalin sijaan Debiania
+
+Host: Suoritin: AMD Ryzen 7 1700 (8-Core Processor) RAM: 32 Gt Näytönohjain: 8 Gt Tallennustila: 932 Gt
+
+Guest: Oracle VM VirtualBox 7.2.4
+
+Virtuaalikone: Debian 13.3 Cinnamon
+
+RAM: 4GB
+
+Levytila: 20 GB
+
+CPU: 2
