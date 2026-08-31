@@ -1,6 +1,6 @@
 ## x) Lue/katso/kuuntele ja tiivistä
 
-fqwojfjwpqf
+# Buuri 2026
 
 ## a) Asenna Metasploitable 2 virtuaalikoneeseen
 
