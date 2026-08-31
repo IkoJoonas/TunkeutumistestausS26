@@ -22,7 +22,7 @@ Metasploitablen verkkoasetukset
 
 ## c) Harjoittelemme omassa virtuaaliverkossa, jossa on Kali ja Metaspoitable. Osoita testein, että 1) koneet eivät saa yhteyttä Internetiin 2) Koneet saavat yhteyden toisiinsa.
 
-Tarkistin Metasploitablen ip osoitteen
+Tarkistin Metasploitablen IP-osoitteen
 
 <img width="713" height="175" alt="met ip" src="https://github.com/user-attachments/assets/dc07b928-cde9-4554-b95e-50f7eb156472" />
 
@@ -37,3 +37,59 @@ Seuraavaksi kokeilin Debianilla pingata verkkoon ja Metasploitableen.
 <img width="712" height="252" alt="deb 2 ping" src="https://github.com/user-attachments/assets/835e2b8e-e679-481b-8dc0-4185c8e9c9c2" />
 
 Molemmat onnistui, ei yhteyttä verkkoon, mutta onnistunut yhteys Metasploitableen.
+
+## d) Etsi Metasploitable porttiskannaamalla
+
+Ajoin komennon `nmap -sn 192.168.56.0/24`
+
+<img width="749" height="162" alt="deb nmap" src="https://github.com/user-attachments/assets/9452eab2-9307-4fe4-a492-8601f117f609" />
+
+Tuloksia tuli kaksi ja päätin kokeilla ensimmäistä.
+
+<img width="1603" height="609" alt="deb met confirm" src="https://github.com/user-attachments/assets/10430ee0-1073-4dd3-980b-150f78204a72" />
+
+Selaimella tarkistaminen osoitti, että IP oli oikea.
+
+## e) Porttiskannaa Metasploitable huolellisesti ja kaikki portit
+
+Ajoin komennon `nmap -A -T4 -p- 192.167.56.101`
+
+Nmap löysi paljon avoimia portteja, mutta näin heti alussa kolme kiinnostavaa porttia.
+
+<img width="842" height="519" alt="nmap ports" src="https://github.com/user-attachments/assets/b80eb8a3-3d61-4e03-9003-451fdc7c1910" />
+
+`Portti 21/tcp FTP` näyttää, että palvelimelle pystyy kirjautumaan ilman käyttäjätunnusta tai salasanaa.
+`Portti 22/tcp OpenSSH` vanha OpenSSh versio
+`Portti 23/tcp Telnet` vanhentunut verkko protokolla
+
+## f) Vapaaehtoinen bonus: Sisään vaan. Pääsetkö murtautumaan Metasploitableen?
+
+Päätin kokeilla onnistunko murtautumisessa.
+
+`FTP`
+
+<img width="448" height="270" alt="f) conf3" src="https://github.com/user-attachments/assets/e2aaee92-bf23-47c7-b105-f29701825fe1" />
+
+Kirjautumiseen riitti käyttäjätunnukseksi `anonymous` ja salasana kohdan pystyi jättämään tyhjäksi.
+
+`OpenSSH`
+
+<img width="906" height="414" alt="f) conf4" src="https://github.com/user-attachments/assets/6eb019de-2cc6-447b-ab16-dc792ef8bab5" />
+
+Kirjautuminen ei vaatinut käyttäjätunnusta ja salasanaksi kelpasi Metasploitablen oletussalana `msfadmin`.
+
+`Telnet`
+
+<img width="892" height="843" alt="f) conf2" src="https://github.com/user-attachments/assets/75a2745a-2aaf-461a-a533-57b87127930d" />
+
+Kirjautuminen onnistui oletustunnuksilla `msfadmin:msfadmin`.
+
+e) kohdassa löytämistä tuloksista selaamalla alaspäin löysin vielä yhden mielenkiintoisen portin, jota päätin kokeilla.
+
+<img width="614" height="27" alt="f) port1524" src="https://github.com/user-attachments/assets/39dcd7be-ae1b-468b-863c-a63f1b61f5fa" />
+
+<img width="517" height="136" alt="f) conf" src="https://github.com/user-attachments/assets/1c2dbe63-8713-46be-a59d-2639fb7e387e" />
+
+Tässä pääsin suoraan `root` käyttäjäksi ilman mitään käyttäjätunnuksia.
+
+Kaikki murtautumiset onnistui :)
