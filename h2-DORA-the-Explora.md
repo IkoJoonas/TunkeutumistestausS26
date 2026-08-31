@@ -59,7 +59,9 @@ Nmap löysi paljon avoimia portteja, mutta näin heti alussa kolme kiinnostavaa 
 <img width="842" height="519" alt="nmap ports" src="https://github.com/user-attachments/assets/b80eb8a3-3d61-4e03-9003-451fdc7c1910" />
 
 `Portti 21/tcp FTP` näyttää, että palvelimelle pystyy kirjautumaan ilman käyttäjätunnusta tai salasanaa.
+
 `Portti 22/tcp OpenSSH` vanha OpenSSh versio
+
 `Portti 23/tcp Telnet` vanhentunut verkko protokolla
 
 ## f) Vapaaehtoinen bonus: Sisään vaan. Pääsetkö murtautumaan Metasploitableen?
