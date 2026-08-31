@@ -115,4 +115,4 @@ Kaikki murtautumiset onnistui :)
 Article 27 "Requirements for testers for the carrying out of TLPT" https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng
 - TIBER-FI, 5.4 Testing phase: Red team testing https://www.suomenpankki.fi/globalassets/bof/en/money-and-payments/the-bank-of-finland-as-catalyst-payments-council/tiber-fi/tiber-fi-2.0-procedures-and-guidelines.pdf
 - https://sourceforge.net/projects/metasploitable/
-- Gemini
+- Gemini, f) kohdassa ssh-komennon saamiseen
