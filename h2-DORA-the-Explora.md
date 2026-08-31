@@ -1,6 +1,17 @@
 ## x) Lue/katso/kuuntele ja tiivistä
 
-# Buuri 2026
+Buuri 2026
+
+- Red teamit käyttävät leg uppeja, jotta päästään ongelmatilanteissa eteenpäin jolloin aikaresurssit eivät ylity.
+
+DORA
+
+- TLPT suoritettava vähintään joka 3. vuosi tuotantojärjestelmissä, tämä kattaa kriittiset toiminnot ja ulkoistetut palvelut.
+
+TIBER-FI
+
+- Red team vaihe käynnistyy uhkatiedusteluraportin hyväksynnän jälkeen ja koostuu kahdesta osasta -> testisuunnitelman luomisesta ja aktiivisesta testauksesta.
+- RTT käy läpi klassisen hyökkäysketjun: tiedustelu -> aseistaminen -> toimitus -> hyväksikäyttö -> liikkuminen verkossa -> toimet kohteessa.
 
 ## a) Asenna Metasploitable 2 virtuaalikoneeseen
 
@@ -95,3 +106,11 @@ e) kohdassa löytämistä tuloksista selaamalla alaspäin löysin vielä yhden m
 Tässä pääsin suoraan `root` käyttäjäksi ilman mitään käyttäjätunnuksia.
 
 Kaikki murtautumiset onnistui :)
+
+## Lähteet
+
+- https://terokarvinen.com/tunkeutumistestaus/#h2-dora-the-explora
+- Buuri 2026: https://terokarvinen.com/buuri-2026-dora-and-threat-lead-penetration-testing/buuri-2026-dora-and-threat-lead-penetration-testing--teros-pentest-course.pdf
+- DORA, Article 26 "Advanced testing of ICT tools, systems and processes based on TLPT"
+Article 27 "Requirements for testers for the carrying out of TLPT" https://eur-lex.europa.eu/eli/reg/2022/2554/oj/eng
+- TIBER-FI, 5.4 Testing phase: Red team testing https://www.suomenpankki.fi/globalassets/bof/en/money-and-payments/the-bank-of-finland-as-catalyst-payments-council/tiber-fi/tiber-fi-2.0-procedures-and-guidelines.pdf
