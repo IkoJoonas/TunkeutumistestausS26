@@ -86,3 +86,40 @@ Tarkistus.
 <img width="201" height="93" alt="f)6" src="https://github.com/user-attachments/assets/75d75065-a2f4-475b-8857-b129f9ed02e4" />
 
 ## g) Kerää levittäytymisessä (lateral movement) tarvittavaa tietoa metasploitablesta
+
+`ifconfig`
+
+<img width="626" height="316" alt="g)" src="https://github.com/user-attachments/assets/06c568ae-1a10-41fd-8a5e-3b16edc12685" />
+
+Seuraavaksi katsoin `cat /etc/passwd`
+
+<img width="624" height="596" alt="g)2" src="https://github.com/user-attachments/assets/607fd194-4c54-46fe-af1a-e2d22d3b3004" />
+
+Näkyi suoraan pääkäyttäjä root. Näkyvillä olevia tunnuksia voidaan yrittää, kun murretaan salasanoja.
+
+## h) Murtaudu Metasploitableen jollain toisella tavalla
+
+Aiemmassa porttiskannauksessa huomattu portti 1524. Tähän murtauduin komennolla `nc 192.168.56.101 1524`
+
+<img width="260" height="91" alt="h)" src="https://github.com/user-attachments/assets/7a5882b8-20c6-4c57-9a16-3b5522b97bed" />
+
+## i) Demonstroi Meterpretrin ominaisuuksia.
+
+## j) Tallenna shell-sessio tekstitiedostoon script-työkalulla (script -fa log001.txt) tai tmux:lla
+
+Toisessa terminaalissa ajoin komennon `script -fa log001.txt` ollessani msfconsolen sisällä. Toisessa tein kohdan f) uudestaan ja kun olin valmis poistun komennolla `exit`
+
+Tarkistin oliko tallennus toiminut.
+
+<img width="894" height="56" alt="j)" src="https://github.com/user-attachments/assets/1795e7a9-3822-415e-b3c1-eb94ef76b055" />
+
+## k) Pivot point. Laita kaikki harjoituksen tiedostot (script -fa, nmap -oA...) samaan kansioon
+
+Loin kansion `mkdir tehtava` ja siirsin tiedostot sinne.
+
+## l) Attaaack! Mitä Mitre Attack taktiikoita ja tekniikoita käytit tässä harjoituksessa?
+
+`db_nmap -sV`
+- Taktiikka: Reconnaissance
+- Tekniikka: Active Scanning
+
