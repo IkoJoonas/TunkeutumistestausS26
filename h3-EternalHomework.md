@@ -51,6 +51,8 @@ Ja service listasta suodatin tiettyyn porttiin `-p 1524`
 
 Otin tähän vsftpd 2.3.4 backdoorin, jossa tahallinen backdoor lisättiin .tar.gz arkistoon. Tämä mahdollistaa root shellin avaamisen lisäämällä `:)` FTP-käyttäjätunnuksen loppuun.
 
+https://medium.com/@emreese.r/exploitation-of-vsftpd-2-3-4-vulnerability-on-metasploitable-e6a1d614d5e5
+
 ## e) Vertaile nmap:n omaa tiedostoon tallennusta (-oA foo) ja db_nmap:n tallennusta tietokantoihin
 
 nmap -oA foo
@@ -133,3 +135,15 @@ Loin kansion `mkdir tehtava` ja siirsin tiedostot sinne.
 - Tekniikka: Exploit
 
 Muita taktiikoita olivat Execution, Credential Access ja Discovery eli yhteensä viittä eri taktiikkaa.
+
+## Lähteet
+
+https://terokarvinen.com/tunkeutumistestaus/#h3-eternalhomework
+
+Jaswal 2020: Mastering Metasploit - 4ed: Chapter 1: Approaching a Penetration Test Using Metasploit: https://learning.oreilly.com/library/view/mastering-metasploit/9781838980078/B15076_01_Final_ASB_ePub.xhtml#_idParaDest-31
+
+https://nmap.org/book/man-host-discovery.html
+
+https://nmap.org/book/host-discovery-controls.html
+
+https://medium.com/@emreese.r/exploitation-of-vsftpd-2-3-4-vulnerability-on-metasploitable-e6a1d614d5e5
