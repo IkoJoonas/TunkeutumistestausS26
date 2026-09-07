@@ -1,8 +1,13 @@
 ## x) Lue/katso/kuuntele ja tiivistä
 
-jgpoewjngp
+Jaswal 2020: Mastering Metasploit - 4ed: Chapter 1: Approaching a Penetration Test Using Metasploit
+- Open source ja aktiivisessa kehityksessä.
 
-gmoewp
+Mitä 'nmap -sn' tekee?
+- tekee ping sweep -skannauksen, joka selvittää mitkä hostit ovat verkossa ilman porttiskannausta.
+- lähettää ICMP echo request, TCP SYN porttiin 443, TCP ACK porttiin 80, ICMP timestamp request
+
+Lähteenä käytin https://nmap.org/book/man-host-discovery.html ja https://nmap.org/book/host-discovery-controls.html , jotka ovat nmapin virallista dokumentaatiota.
 
 ## b) Tallenna porttiskannauksen tuloksia Metasploitin tietokantoihin
 
@@ -123,3 +128,8 @@ Loin kansion `mkdir tehtava` ja siirsin tiedostot sinne.
 - Taktiikka: Reconnaissance
 - Tekniikka: Active Scanning
 
+`nc 192.168.56.101 1524`
+- Taktiikka: Initial Access
+- Tekniikka: Exploit
+
+Muita taktiikoita olivat Execution, Credential Access ja Discovery eli yhteensä viittä eri taktiikkaa.
