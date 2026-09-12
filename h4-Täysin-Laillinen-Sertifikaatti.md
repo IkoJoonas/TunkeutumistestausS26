@@ -22,7 +22,7 @@ Seuraavaksi menin **Connection Settings**, jossa syötin seuraavat tiedot.
 
 <img width="942" height="566" alt="a)3" src="https://github.com/user-attachments/assets/3bc93466-4f68-4462-82af-499918e10292" />
 
-Tämän jälkeen kirjoitin selaimen `about:config` sivulle, jossa muutin kohdan **network.proxy.allow_hijacking_localhost** `true`
+Tämän jälkeen menin selaimen `about:config` sivulle, jossa muutin kohdan **network.proxy.allow_hijacking_localhost** `true`
 
 <img width="1154" height="338" alt="a)4" src="https://github.com/user-attachments/assets/92d09401-54c5-45d3-bee4-f93afd7d269b" />
 
