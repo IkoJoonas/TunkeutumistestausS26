@@ -12,4 +12,14 @@ Seuraavaksi menin **tools** -> **options** -> **Network** -> **Server Certificat
 
 <img width="932" height="721" alt="a)1" src="https://github.com/user-attachments/assets/ad1c76b2-fce2-48ec-8cc0-06f5a3ea2793" />
 
-Loin uuden sertifikaatin ja tallensin sen. Avasin Firefoxin ja menin asetuksien kautta **View Certificates** importtasin tiedoston, minkä olin tallentanut ja valitsin **"Trust this CA to identify websites"**. Varmistin, että sertifikaatti näkyy **Certificate Manager**:ssa
+Loin uuden sertifikaatin ja tallensin sen. Avasin Firefoxin ja menin asetuksien kautta **View Certificates** importtasin tiedoston, minkä olin tallentanut ja valitsin **"Trust this CA to identify websites"**. Varmistin, että sertifikaatti näkyy **Certificate Manager** listassa.
+
+<img width="833" height="579" alt="a)2" src="https://github.com/user-attachments/assets/05040bc9-78c3-44fe-86de-bdcb11e059ac" />
+
+Näkyi.
+
+Seuraavaksi menin **Connection Settings**, jossa syötin seuraavat tiedot.
+
+<img width="942" height="566" alt="a)3" src="https://github.com/user-attachments/assets/3bc93466-4f68-4462-82af-499918e10292" />
+
+Tämän jälkeen kirjoitin selaimen `about:config` sivulle, jossa muutin kohdan **network.proxy.allow_hijacking_localhost** `true`
