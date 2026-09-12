@@ -62,6 +62,6 @@ Testasin olinko saanut laitettua asetukset oikein menemällä PortSwiggerin sivu
 
 Patterns toimi oikein ja vain määritellyt sivustot tulivat ZAP läpi.
 
-# Cross Site Scripting (XSS)
+## Cross Site Scripting (XSS)
 
 ## c) Reflected XSS into HTML context with nothing encoded
