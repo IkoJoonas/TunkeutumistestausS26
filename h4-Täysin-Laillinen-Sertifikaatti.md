@@ -65,3 +65,39 @@ Patterns toimi oikein ja vain määritellyt sivustot tulivat ZAP läpi.
 ## Cross Site Scripting (XSS)
 
 ## c) Reflected XSS into HTML context with nothing encoded
+
+Avasin labin, joka oli blogisivu jossa artikkeleita ja hakukenttä. Hakukenttä oli ainoa asia mihin pystyi syöttämään tekstiä. Syötin siihen "testi".
+
+<img width="912" height="236" alt="c)" src="https://github.com/user-attachments/assets/15b9bbad-7394-4e3d-81ae-265c6eb9c878" />
+
+Ei tuloksia, mikä ei tullut yllätyksenä. Tarkistelin lähdekoodia miten syötteeni palautuu sivulle.
+
+<img width="622" height="175" alt="c)1" src="https://github.com/user-attachments/assets/3eb062ac-50ce-484b-815a-dd1e0d43ca28" />
+
+Palautus tapahtui siten, että hakusana tulee näkyviin ilman mitään encodausta.
+
+Päätin kokeilla yleistä kikkaa `<script>alert(1)</script>`. Tästä tuli alert-popup.
+
+<img width="784" height="295" alt="c)2" src="https://github.com/user-attachments/assets/372b945e-1e75-4b79-a003-76ea22d906d7" />
+
+Painoin "ok" ja labi ratkesi.
+
+<img width="990" height="246" alt="c)3" src="https://github.com/user-attachments/assets/d87ac023-3af7-43e5-bf33-e4321869e040" />
+
+Haavoittuvuus toimi, koska palvelin liimaa search-parametrin arvon suoraan HTMLtemplaattiin ilman mitään output encodingia. Kyseessä on siis reflected XSS, koska haitallinen koodi tulee URL-parametrin mukana `(/?search=<script>alert(1)</script>)` ja heijastuu suoraan vastaussivuun eikä tallennu palvelimelle pysyvästi. (PortSwigger, s.a.)
+
+## d) Stored XSS into HTML context with nothing encoded
+
+Avasin labin, joka vaikutti samanlaiselta, kuin aikaisempi, mutta nyt hakukentän sijaan oli kommenttikenttä. Syötin taas "testi" ja sen jälkeen tarkastelin lähdekoodia.
+
+<img width="1108" height="151" alt="d)" src="https://github.com/user-attachments/assets/d00d895b-244f-4432-81bf-a0cf9b663dbd" />
+
+Kommenttini oli tallennettu ilman encodausta. Takaisin kommenttikenttään ja syötin `<script>alert(1)</script>`.
+
+<img width="893" height="718" alt="d)1" src="https://github.com/user-attachments/assets/9abe6ee6-bcae-49f4-a9f9-b7f5abafab96" />
+
+Tämän jälkeen labi ratkesi.
+
+<img width="1291" height="253" alt="d)2" src="https://github.com/user-attachments/assets/36c7afb5-6d09-4b29-9058-7b7a83165c52" />
+
+Haavoittuvuus toimi tässä labissa samasta syystä kuin c) kohdassa eli palvelin liimaa kommentin tekstin suoraan HTML templaattiin tagin sisään ilman output-encodingia. Erona c) kohtaan on, että kommentti tallentuu palvelimen tietokantaan, joten payload suoritetaan jokaisella käyttäjällä, joka avaa artikkelin. (PortSwigger, s.a.)
