@@ -28,10 +28,40 @@ Tämän jälkeen kirjoitin selaimen `about:config` sivulle, jossa muutin kohdan 
 
 Nyt Firefox ohjaa localhost liikennettä proxyn läpi.
 
-Kävin vielä laittamassa kuvien sieppauksen päälle ZAP:issa. **tools** -> **options** -> **Display** -> **Process images in HTTP requests/responses**
+Kävin vielä laittamassa kuvien sieppauksen päälle ZAP:issa. **tools** -> **options** -> **Display** -> **Process images in HTTP requests/responses**.
 
 Testasin näenkö liikennettä menemällä `http://example.com` sivulle.
 
 <img width="930" height="756" alt="a)5" src="https://github.com/user-attachments/assets/edb5ab9b-ce84-456c-8b94-eb0c9a03eb29" />
 
 Näkyi.
+
+## b) Kettumaista
+
+Aloitin ottamalla proxyn pois päältä Firefoxin asetuksien **Connection Settings** kohdasta.
+
+<img width="949" height="567" alt="b)" src="https://github.com/user-attachments/assets/45fafd50-9770-484b-a4ba-8afedc73f454" />
+
+Asensin FoxyProxyn selaimen addoneista.
+
+<img width="1325" height="611" alt="b)1" src="https://github.com/user-attachments/assets/0ed80de0-e184-463f-a081-fba7a0e84380" />
+
+Avasin FoxyProxyn asetukset ja **Proxies** välilehdelle täytin seuraavanlaisesti.
+
+<img width="1266" height="587" alt="b)2" src="https://github.com/user-attachments/assets/57bb15d8-a968-4586-8035-a22b8f29d0c2" />
+
+Tämän jälkeen alempana olevaan **Proxy by Patterns** osioon lisäsin kolme patternia, jotka ohjaavat ZAP:iin vain ennalta määritetyt osoitteet.
+
+<img width="1134" height="192" alt="b)3" src="https://github.com/user-attachments/assets/09fcde23-e0c0-401e-93e6-cf3581d77cb4" />
+
+Tallensin asetukset ja käynnistin FoxyProxyn **Proxy by Patterns**.
+
+Testasin olinko saanut laitettua asetukset oikein menemällä PortSwiggerin sivuille ja valitsemalla labin, jonka olin aiemmin tehnyt.
+
+<img width="1862" height="766" alt="b)4" src="https://github.com/user-attachments/assets/14a97e3d-1c0b-4db7-bd7c-56792953aa2e" />
+
+Patterns toimi oikein ja vain määritellyt sivustot tulivat ZAP läpi.
+
+# Cross Site Scripting (XSS)
+
+## c) Reflected XSS into HTML context with nothing encoded
