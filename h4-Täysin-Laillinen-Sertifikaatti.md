@@ -110,7 +110,7 @@ Avasin labin, joka oli jonkinlaisen kaupansivusto. Klikkailin tuotteista ja meni
 
 <img width="1172" height="938" alt="f)" src="https://github.com/user-attachments/assets/51d679c7-25ef-432e-ab22-5acb13b00055" />
 
-Huomasin, että tuotteen kuva ladata Get /image?filename=`kuvan numero`.jpg pyyntönä.
+Huomasin, että tuotteen kuva ladataan Get /image?filename=`kuvan numero`.jpg pyyntönä.
 
 Kopioin pyynnön ja muutin sitä `image?filename=../../../etc/passwd` muotoon. Tästä aukesi seuraavanlainen sivusto.
 
