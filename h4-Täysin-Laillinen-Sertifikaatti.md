@@ -101,3 +101,22 @@ Tämän jälkeen labi ratkesi.
 <img width="1291" height="253" alt="d)2" src="https://github.com/user-attachments/assets/36c7afb5-6d09-4b29-9058-7b7a83165c52" />
 
 Haavoittuvuus toimi tässä labissa samasta syystä kuin c) kohdassa eli palvelin liimaa kommentin tekstin suoraan HTML templaattiin tagin sisään ilman output-encodingia. Erona c) kohtaan on, että kommentti tallentuu palvelimen tietokantaan, joten payload suoritetaan jokaisella käyttäjällä, joka avaa artikkelin. (PortSwigger, s.a.)
+
+## Path traversal
+
+## f) File path traversal, simple case
+
+Avasin labin, joka oli jonkinlaisen kaupansivusto. Klikkailin tuotteista ja menin sen jälkeen tutkimaan ZAP:in **History** välilehteen tulleita pyyntöjä.
+
+<img width="1172" height="938" alt="f)" src="https://github.com/user-attachments/assets/51d679c7-25ef-432e-ab22-5acb13b00055" />
+
+Huomasin, että tuotteen kuva ladata Get /image?filename=`kuvan numero`.jpg pyyntönä.
+
+Kopioin pyynnön ja muutin sitä `image?filename=../../../etc/passwd` muotoon. Tästä aukesi seuraavanlainen sivusto.
+
+<img width="750" height="208" alt="f)3" src="https://github.com/user-attachments/assets/73a31d4e-0c11-48fe-a228-fb5f34f6ee83" />
+
+Katsoin ZAP:sta **Response** välilehteä ja muutin **Body: Text** .
+
+<img width="818" height="513" alt="f)4" src="https://github.com/user-attachments/assets/8259f9ea-593d-4c32-9df1-6b57bb76d788" />
+
