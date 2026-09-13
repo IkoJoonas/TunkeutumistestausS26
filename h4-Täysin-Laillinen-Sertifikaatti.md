@@ -120,3 +120,8 @@ Katsoin ZAP:sta **Response** välilehteä ja muutin **Body: Text** .
 
 <img width="818" height="513" alt="f)4" src="https://github.com/user-attachments/assets/8259f9ea-593d-4c32-9df1-6b57bb76d788" />
 
+Mielestäni olin löytänyt labille olennaista, että se olisi ratkaistu siispä palasin takaaksepäin ja labi muuttuikin ratkenneeksi.
+
+<img width="745" height="322" alt="f)5" src="https://github.com/user-attachments/assets/5a27a4c0-c616-4718-96aa-7fc68b5f7972" />
+
+Tässä haavoittuvuus toimii, koska palvelin yhdistää kuvakansion polun ja filename parametrin arvon suoraan tarkistamatta onko syötteessä ../ -sekvenssejä.
