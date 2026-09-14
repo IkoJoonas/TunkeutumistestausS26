@@ -158,7 +158,7 @@ Materiaaleissa luki, että voi kokeilla suoraan `/etc/passwd` joten kokeilin sit
 
 <img width="1177" height="604" alt="g)2" src="https://github.com/user-attachments/assets/18542a50-3d74-4c8d-be0b-476c315ab430" />
 
-Menin takaisin labiin ja päivitin sivun, labi oli ratkaisutu.
+Menin takaisin labiin ja päivitin sivun, labi oli ratkaistu.
 
 <img width="748" height="586" alt="g)3" src="https://github.com/user-attachments/assets/e1462b10-97af-4ccf-93d7-62689a1fbe55" />
 
