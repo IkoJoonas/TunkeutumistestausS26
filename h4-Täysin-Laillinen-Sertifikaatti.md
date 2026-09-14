@@ -104,7 +104,9 @@ Haavoittuvuus toimi tässä labissa samasta syystä kuin c) kohdassa eli palveli
 
 ## e) Selitä esimerkin avulla, mitä hyökkääjä hyötyy XSS-hyökkäyksestä
 
-alert(1) on todistus haavoittuvuudesta. XSS:n vaarallisuus on, että koodi ajetaan uhrin selaimessa uhrin istunnon kontekstissa eli selain luulee koodin tulevan luotettavalta sivustolta. Tämä jälkeen kirjautunut käyttäjä avaa artikkelin, hänen istuntoevästeensä lähtevät hyökkääjän palvelimelle. Hyökkääjä laittaa evästeet omaan selaimeensa ja on nyt kirjautuneena uhrin tilille. Hyökkääjä voi esim. tehdä ostoksia uhrin käyttäjällä.
+XSS:n vaarallisuus on, että koodi ajetaan uhrin selaimessa uhrin istunnon kontekstissa eli selain luulee koodin tulevan luotettavalta sivustolta. Tämä jälkeen kirjautunut käyttäjä avaa artikkelin, hänen istuntoevästeensä lähtevät hyökkääjän palvelimelle. Hyökkääjä laittaa evästeet omaan selaimeensa ja on nyt kirjautuneena uhrin tilille. Hyökkääjä voi esim. tehdä ostoksia uhrin käyttäjällä.
+
+alert(1) on todistus haavoittuvuudesta.
 
 ## Path traversal
 
