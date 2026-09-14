@@ -128,3 +128,46 @@ Tässä haavoittuvuus toimii, koska palvelin yhdistää kuvakansion polun ja fil
 
 ## g) File path traversal, traversal sequences blocked with absolute path bypass
 
+Avasin labin ja aloitin lähestymisen niin, kuin aiemmissa labeissa.
+
+<img width="1169" height="909" alt="g)" src="https://github.com/user-attachments/assets/60c89d39-ee39-4e90-9f09-39314524dd02" />
+
+Materiaaleissa luki, että voi kokeilla suoraan `/etc/passwd` joten kokeilin sitä.
+
+<img width="1177" height="604" alt="g)2" src="https://github.com/user-attachments/assets/18542a50-3d74-4c8d-be0b-476c315ab430" />
+
+Menin takaisin labiin ja päivitin sivun, labi oli ratkaisutu.
+
+<img width="748" height="586" alt="g)3" src="https://github.com/user-attachments/assets/e1462b10-97af-4ccf-93d7-62689a1fbe55" />
+
+Haavoittuvuus toimi, koska sovellus suodattaa ../ -sekvenssit pois käytöstä, mutta se ei estä absoluuttisia polkuja.
+
+## h) File path traversal, traversal sequences stripped non-recursively
+
+Aloitus tässäkin sama, kuten aiemmin.
+
+<img width="1173" height="933" alt="h)" src="https://github.com/user-attachments/assets/93817e42-f605-452e-8b9e-a126af261c57" />
+
+Materiaalia lukemalla ratkaisu eli sisäistämällä ../ -sekvenssit muotoon `....//` sovellus näkee vain yhden `../` ja poistaa sen niin jäljelle jää kuitenkin toinen.
+
+<img width="1908" height="940" alt="h)1" src="https://github.com/user-attachments/assets/626444fa-a739-4beb-b4c4-3c55336316f0" />
+
+Labi oli ratkaistu tällä.
+
+<img width="744" height="556" alt="h)2" src="https://github.com/user-attachments/assets/849ac8ef-eeee-4098-b69f-38160375d932" />
+
+## i) Insecure direct object references (IDOR)
+
+Avasin labin ja klikkasin **live chat**, tänne syötin tekstin "testi" ja lähetin sen.
+
+Sain Get -pyynnön 2.txt . Tästä lähdin miettimään miksi aloittaa luvusta 2, eikä 1.
+
+Muokkasin pyyntöä.
+
+<img width="1169" height="609" alt="i)1" src="https://github.com/user-attachments/assets/8ead5628-98c7-4f4c-9ded-ef2babd6f39f" />
+
+Kopioin salasanan ja kokeilin sitä Carlosille.
+
+<img width="746" height="650" alt="i)2" src="https://github.com/user-attachments/assets/d2ee736c-4077-4c22-afad-596fd4251448" />
+
+Salasana oli oikein ja labi oli ratkaistu.
