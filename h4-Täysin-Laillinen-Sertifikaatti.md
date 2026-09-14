@@ -100,7 +100,7 @@ Painoin "ok" ja labi ratkesi.
 
 <img width="990" height="246" alt="c)3" src="https://github.com/user-attachments/assets/d87ac023-3af7-43e5-bf33-e4321869e040" />
 
-Haavoittuvuus toimi, koska palvelin liimaa search-parametrin arvon suoraan HTMLtemplaattiin ilman mitään output encodingia. Kyseessä on siis reflected XSS, koska haitallinen koodi tulee URL-parametrin mukana `(/?search=<script>alert(1)</script>)` ja heijastuu suoraan vastaussivuun eikä tallennu palvelimelle pysyvästi. (PortSwigger, s.a.)
+Haavoittuvuus toimi, koska palvelin liimaa search parametrin arvon suoraan HTMLtemplaattiin ilman mitään output encodingia. Kyseessä on siis reflected XSS, koska haitallinen koodi tulee URL-parametrin mukana `(/?search=<script>alert(1)</script>)` ja heijastuu suoraan vastaussivuun eikä tallennu palvelimelle pysyvästi. (PortSwigger, s.a.)
 
 ## d) Stored XSS into HTML context with nothing encoded
 
@@ -116,7 +116,7 @@ Tämän jälkeen labi ratkesi.
 
 <img width="1291" height="253" alt="d)2" src="https://github.com/user-attachments/assets/36c7afb5-6d09-4b29-9058-7b7a83165c52" />
 
-Haavoittuvuus toimi tässä labissa samasta syystä kuin c) kohdassa eli palvelin liimaa kommentin tekstin suoraan HTML templaattiin tagin sisään ilman output-encodingia. Erona c) kohtaan on, että kommentti tallentuu palvelimen tietokantaan, joten payload suoritetaan jokaisella käyttäjällä, joka avaa artikkelin. (PortSwigger, s.a.)
+Haavoittuvuus toimi tässä labissa samasta syystä, kuin c) -kohdassa. Palvelin liimaa kommentin tekstiin suoraan HTML templaattiin tagin sisään ilman output-encodingia. Erona on, että kommentti tallentuu palvelimen tietokantaan, joten payload suoritetaan jokaisella käyttäjällä, joka avaa artikkelin. (PortSwigger, s.a.)
 
 ## e) Selitä esimerkin avulla, mitä hyökkääjä hyötyy XSS-hyökkäyksestä
 
@@ -146,7 +146,7 @@ Mielestäni olin löytänyt labille olennaista, että se olisi ratkaistu siispä
 
 <img width="745" height="322" alt="f)5" src="https://github.com/user-attachments/assets/5a27a4c0-c616-4718-96aa-7fc68b5f7972" />
 
-Tässä haavoittuvuus toimii, koska palvelin yhdistää kuvakansion polun ja filename parametrin arvon suoraan tarkistamatta onko syötteessä ../ -sekvenssejä.
+Tässä haavoittuvuus toimii, koska palvelin yhdistää kuvakansion polun ja filename parametrin arvon suoraan tarkistamatta onko syötteessä ../ -sekvenssejä. (PortSwigger, s.a.)
 
 ## g) File path traversal, traversal sequences blocked with absolute path bypass
 
@@ -162,7 +162,7 @@ Menin takaisin labiin ja päivitin sivun, labi oli ratkaisutu.
 
 <img width="748" height="586" alt="g)3" src="https://github.com/user-attachments/assets/e1462b10-97af-4ccf-93d7-62689a1fbe55" />
 
-Haavoittuvuus toimi, koska sovellus suodattaa ../ -sekvenssit pois käytöstä, mutta se ei estä absoluuttisia polkuja.
+Haavoittuvuus toimi, koska sovellus suodattaa ../ -sekvenssit pois käytöstä, mutta se ei estä absoluuttisia polkuja.(PortSwigger, s.a.)
 
 ## h) File path traversal, traversal sequences stripped non-recursively
 
@@ -178,7 +178,7 @@ Labi oli ratkaistu tällä.
 
 <img width="744" height="556" alt="h)2" src="https://github.com/user-attachments/assets/849ac8ef-eeee-4098-b69f-38160375d932" />
 
-Haavoittuvuus toimi, koska sovellus suodattaa vain kerran ../ -sekvenssit.
+Haavoittuvuus toimi, koska sovellus suodattaa vain kerran ../ -sekvenssit. (PortSwigger, s.a.)
 
 ## i) Insecure direct object references (IDOR)
 
@@ -196,7 +196,7 @@ Kopioin salasanan ja kokeilin sitä Carlosille.
 
 Salasana oli oikein ja labi oli ratkaistu.
 
-Haavoittuvuus toimi, koska sovellus tarjosi transcript -tiedostot suoraan tiedostonumeron perusteella tarkastamatta niitä riippumatta onko kyseinen tiedosto kirjautuneelle käyttäjälle.
+Haavoittuvuus toimi, koska sovellus tarjosi transcript -tiedostot suoraan tiedostonumeron perusteella tarkastamatta niitä riippumatta onko kyseinen tiedosto kirjautuneelle käyttäjälle. (PortSwigger, s.a.)
 
 ## Lähteet
 
