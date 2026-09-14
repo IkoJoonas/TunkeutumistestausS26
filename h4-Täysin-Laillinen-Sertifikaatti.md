@@ -176,6 +176,7 @@ Materiaalia lukemalla ratkaisu eli sisäistämällä ../ -sekvenssit muotoon `..
 
 Labi oli ratkaistu tällä.
 
+Haavoittuvuus toimi, koska sovellus suodattaa vain kerran ../ -sekvenssit.
 <img width="744" height="556" alt="h)2" src="https://github.com/user-attachments/assets/849ac8ef-eeee-4098-b69f-38160375d932" />
 
 ## i) Insecure direct object references (IDOR)
