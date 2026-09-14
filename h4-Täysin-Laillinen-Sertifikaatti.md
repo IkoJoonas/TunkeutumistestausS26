@@ -171,3 +171,15 @@ Kopioin salasanan ja kokeilin sitä Carlosille.
 <img width="746" height="650" alt="i)2" src="https://github.com/user-attachments/assets/d2ee736c-4077-4c22-afad-596fd4251448" />
 
 Salasana oli oikein ja labi oli ratkaistu.
+
+Haavoittuvuus toimi, koska sovellus tarjosi transcript -tiedostot suoraan tiedostonumeron perusteella tarkastamatta niitä riippumatta onko kyseinen tiedosto kirjautuneelle käyttäjälle.
+
+## Lähteet
+
+- PortSwigger. s.a. Cross-site scripting: https://portswigger.net/web-security/cross-site-scripting
+- PortSwigger. s.a. Path traversal: https://portswigger.net/web-security/file-path-traversal
+- PortSwigger. s.a. Insecure direct object references (IDOR): https://portswigger.net/web-security/access-control/idor
+- Karvinen, T. 2026. https://terokarvinen.com/tunkeutumistestaus/#h4-taysin-laillinen-sertifikaatti
+- OWASP 2021: OWASP Top 10:2021: A01:2021 – Broken Access Control: https://owasp.org/Top10/A01_2021-Broken_Access_Control/
+
+
