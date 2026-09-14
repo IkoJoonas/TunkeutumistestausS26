@@ -1,7 +1,23 @@
 ## x) Lue/katso ja tiivistä
 
-fwijqof
+OWASP 2021: OWASP Top 10:2021 A01:2021 – Broken Access Control
 
+- Listan ensimmäinen, 94% testatuista sovelluksista löytyi kyseinen haavoittuvuus
+- Käyttäjä pääsee tekemään jotain yli hänen oikeuksien
+
+PortSwigget Academy:
+
+Insecure direct object references (IDOR)
+
+-Pääsynhallinnan haavoittuvuus, jossa sovellus käyttää käyttäjän syöttämää arvoa suoraan objektin hakemiseen ilman omistajuustarkistusta.
+
+Path traversal
+
+- Hyökkääjä lukee palvelimen tiedostoja syöttämällä polkuun ../-sekvenssejä
+
+Cross-site scripting
+
+- Hyökkääjä saa haavoittuneen sivuston palauttamaan haitallista scriptiä, jotka suoritetaan uhrin selaimessa kiertää, voi esiintyä uhrin nimissä.
 ## a) Totally Legit Sertificate
 
 Aloitin tehtävän lataamalla ZAP:in komennolla `sudo apt install zaproxy`. Käynnistin ohjelman komennolla `zaproxy &`.
