@@ -57,7 +57,16 @@ Koska repo on niin kattava, päätin yhdistää kaikki .txt salasanatiedostot yh
 
 <img width="616" height="65" alt="Näyttökuva 2026-09-18 kello 17 46 28" src="https://github.com/user-attachments/assets/bf6f71ae-312a-45a9-9146-22f72193a1e1" />
 
-Loin **salainen.txt** tiedoston ja muutin sen `zip -e salainen.zip salainen.txt` komennolla zip -tiedostoksi.
+Loin **salainen.txt** tiedoston ja muutin sen `zip -e salainen.zip salainen.txt` komennolla zip -tiedostoksi. Salasanaksi keksin **ironball**.
+
+Irrotin taas hashin zip -tiedosta `zip2john salainen.zip > salainen.zip.hash`.
+
+Mursin hashin aiemmin luomallani **all-passwords.txt** tiedostolla.
+
+<img width="680" height="243" alt="Näyttökuva 2026-09-18 kello 17 57 18" src="https://github.com/user-attachments/assets/786d6acd-45f7-41f5-a439-08dcc748fe3a" />
+
+Salasanan murtaminen onnistui.
+
 
 
 
