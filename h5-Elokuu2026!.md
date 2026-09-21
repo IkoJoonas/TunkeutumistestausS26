@@ -165,3 +165,5 @@ Syötin komennon `hashcat -m 0 -a 0 oma.hash oma.txt -r oma.rule`
 Tarkistin vielä tuloksen.
 
 <img width="532" height="87" alt="Näyttökuva 2026-09-21 kello 14 03 57" src="https://github.com/user-attachments/assets/14248a2a-2943-44f5-993f-822845137354" />
+
+Salasanan murtaminen oli onnistunut.
