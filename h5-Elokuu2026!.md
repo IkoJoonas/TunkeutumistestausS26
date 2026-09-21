@@ -92,7 +92,7 @@ Etenin työkalujen asentamisen jälkeen komennoilla:
 
 `enscript -p testi.ps testi.txt`
 
-`ps2pdf testi.ps testipdf` , ps2pdf on osa `ghostscript`ä.
+`ps2pdf testi.ps testi.pdf` , ps2pdf on osa `ghostscript`ä.
 
 `qpdf --encrypt mouse mouse 256 -- testi.pdf salatesti.pdf` , **mouse** on salasana.
 
