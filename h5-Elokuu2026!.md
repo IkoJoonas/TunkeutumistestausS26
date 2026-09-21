@@ -1,6 +1,13 @@
 ## x)
 
-gjeopgjepw
+Karvinen 2022: Cracking Passwords with Hashcat
+
+- Järjestelmät tallentavat salasanat tiivisteinä eli hash.
+
+Karvinen 2023: Crack File Password With John
+
+- Hyödyntää sanakirjahyökkäystä tiedostojen salasanojen murtamiseen.
+- Ensin irroitetaan tiiviste ja sen jälkeen murretaan saatu hash.
 
 ## a) Asenna Hashcat ja testaa sen toiminta
 
@@ -167,3 +174,12 @@ Tarkistin vielä tuloksen.
 <img width="532" height="87" alt="Näyttökuva 2026-09-21 kello 14 03 57" src="https://github.com/user-attachments/assets/14248a2a-2943-44f5-993f-822845137354" />
 
 Salasanan murtaminen oli onnistunut.
+
+## Lähteet
+
+Karvinen, T. 2026 Tunkeutumistestaus. Luettavissa: https://terokarvinen.com/tunkeutumistestaus/#h5-elokuu2026. Luettu 21.9.2026
+
+Karvinen, T. 2022: Cracking Passwords with Hashcat. Luettavissa: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/. Luettu 18.9.2026
+
+Karvinen, T. 2023: Crack File Password With John. Luettavissa: https://terokarvinen.com/2023/crack-file-password-with-john/. Luettu 18.9.2026
+
