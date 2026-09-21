@@ -1,4 +1,4 @@
-## x)
+## x) Lue ja tiivistä
 
 Karvinen 2022: Cracking Passwords with Hashcat
 
