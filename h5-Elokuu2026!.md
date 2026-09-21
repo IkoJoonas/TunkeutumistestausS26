@@ -187,3 +187,6 @@ Danielmiessler: SecLists. Luettavissa: https://github.com/danielmiessler/seclist
 
 LabEx. s.a. Use John the Ripper to Crack PDF Documents. Luettavissa: https://labex.io/tutorials/kali-use-john-the-ripper-to-crack-pdf-documents-594220. Luettu: 21.9.2026
 
+OpenAI. 2026. ChatGPT. Kohdassa d)
+
+Hashcat. s.a. Rule-based attack. Luettavissa: https://hashcat.net/wiki/doku.php?id=rule_based_attack. Luettu 21.9.2026
