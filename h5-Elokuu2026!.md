@@ -79,10 +79,89 @@ Asensin paketinhallinnasta tarvittavat työkalut murtamiseen: `enscript` `ghosts
 
 `ghostscript` muuttaa PostScriptin pdf:ksi.
 
-`qpdf` salaa pdf:n.
+`qpdf` salaa pdf:n AES-256 salauksella.
 
 Etenin työkalujen asentamisen jälkeen komennoilla:
 
 `enscript -p testi.ps testi.txt`
 
-`ps2pdf testi.ps salatestipdf` , ps2pdf on osa `ghostscript`ä
+`ps2pdf testi.ps testipdf` , ps2pdf on osa `ghostscript`ä.
+
+`qpdf --encrypt mouse mouse 256 -- testi.pdf salatesti.pdf` , **mouse** on salasana.
+
+Irrotin hashin salatusta pdf -tiedostosta komennolla `pdf2john salatesti.pdf > salatesti.pdf.hash`.
+
+Tämän jälkeen mursin tiivisteen komennolla `john --wordlist=all-passwords.txt salatesti.pdf.hash`.
+
+<img width="668" height="245" alt="Näyttökuva 2026-09-21 kello 10 39 38" src="https://github.com/user-attachments/assets/a98bbdf9-883e-45f2-b9c2-2229ba6e25c0" />
+
+Tuloste paljasti asettamani salasanan.
+
+## d) Tiiviste
+
+Kokeilin murtaa Linux-käyttäjän salasanan tiivisteen. Aloitin luomalla testikäyttäjän tehtävää varten komennolla `sudo useradd -m testi`.
+
+Asetin salasanan `sudo passwd testi` salasanaksi laitoin **password1**.
+
+Yhdistin käyttäjätilit ja salasanahashit yhteen tiedostoon `sudo unshadow /etc/passwd /etc/shadow > ~/testilinux.hash`
+
+<img width="568" height="68" alt="Näyttökuva 2026-09-21 kello 10 48 24" src="https://github.com/user-attachments/assets/72f77d0f-5788-4c45-822d-9a11fd797cd6" />
+
+Yritin purkaa tiivisteen Johnilla, mutta epäonnistuin.
+
+<img width="516" height="89" alt="Näyttökuva 2026-09-21 kello 10 48 54" src="https://github.com/user-attachments/assets/0e1c8994-4f3a-497f-9b3c-43ccd2834075" />
+
+Ongelmana oli, että John ei tunnistanut tiivistettä, koska Kali käytti oletuksena yescrypt muotoa.
+
+Poistin luomani käyttäjän ja oikaisin luomalla uuden käyttäjän SHA-512 tiivisteellä syöttämällä `PASS=$(openssl passwd -6 password1)` ja `sudo useradd -m -p "$PASS" testi`.
+
+Toistin samat vaiheet mitä aiemmin ja nyt sain salasanan selville.
+
+<img width="666" height="262" alt="Näyttökuva 2026-09-21 kello 10 51 41" src="https://github.com/user-attachments/assets/db4ec20b-f7c6-464c-9e05-f05d26fe30df" />
+
+(Kysyin tekoälyltä apua, jotta pääsin oikotiellä etenemään tehtävässä.)
+
+## e) Sanakirja
+
+Loin sanakirjan käyttämällä nanoa.
+
+<img width="669" height="180" alt="Näyttökuva 2026-09-21 kello 10 55 15" src="https://github.com/user-attachments/assets/11690e9e-3fa5-4ee7-9683-6132df157d58" />
+
+Loin ensin tekstitiedoston ja siitä zip -tiedoston ja salasanaksi asetin sanakirjasta löytyvän sanan **raketti**.
+
+Irroitin hashin zip -tiedostosta ja mursin sitä käyttämällä luomaani sanakirjaa.
+
+<img width="664" height="230" alt="Näyttökuva 2026-09-21 kello 11 01 01" src="https://github.com/user-attachments/assets/3cab745c-e23f-4d12-b471-9e25dedc9f01" />
+
+Tehtävän kulku oli aikalailla sama, kuin kohdassa b).
+
+## f) Hash rules
+
+Mursin tässä salasanan **Muumipeikko2026?** demonstroimalla HashCatin sääntöjä (best64, iso alkukirjain, numeroita ja erikoismerkki).
+
+Aloitin tekemällä tekstitiedosto **oma.txt**
+
+<img width="209" height="72" alt="Näyttökuva 2026-09-21 kello 13 54 03" src="https://github.com/user-attachments/assets/1504db2b-a67b-4df5-a3e1-dadf22581cdb" />
+
+Tein sääntötiedoston **oma.rule**
+
+<img width="208" height="70" alt="Näyttökuva 2026-09-21 kello 13 57 51" src="https://github.com/user-attachments/assets/3ef0ee86-120c-42f2-8081-e06b34035925" />
+
+
+Loin MD5 -tiivisteen salasanasta komennolla `echo -n 'Muumipeikko2026?' | md5sum`.
+
+<img width="368" height="72" alt="Näyttökuva 2026-09-21 kello 13 51 28" src="https://github.com/user-attachments/assets/63af8e83-4426-46d0-a36e-d96695966c39" />
+
+Tallensin sen tiedostoon **oma.hash**.
+
+<img width="639" height="58" alt="Näyttökuva 2026-09-21 kello 13 51 37" src="https://github.com/user-attachments/assets/70f0fc96-efcd-4a82-96d4-552ffed6e98a" />
+
+<img width="312" height="77" alt="Näyttökuva 2026-09-21 kello 13 51 43" src="https://github.com/user-attachments/assets/7838fa0e-906f-4581-b845-6a92bdac0c58" />
+
+Syötin komennon `hashcat -m 0 -a 0 oma.hash oma.txt -r oma.rule`
+
+<img width="657" height="462" alt="Näyttökuva 2026-09-21 kello 14 03 48" src="https://github.com/user-attachments/assets/6486e80c-6e9a-485a-92a3-0b02a82dd808" />
+
+Tarkistin vielä tuloksen.
+
+<img width="532" height="87" alt="Näyttökuva 2026-09-21 kello 14 03 57" src="https://github.com/user-attachments/assets/14248a2a-2943-44f5-993f-822845137354" />
