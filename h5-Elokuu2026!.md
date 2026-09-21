@@ -67,8 +67,22 @@ Mursin hashin aiemmin luomallani **all-passwords.txt** tiedostolla.
 
 Salasanan murtaminen onnistui.
 
+## c) Tiedosto
 
+Päätin kokeilla murtaa pdf -tiedoston. Aloitin luomalla tekstitiedoston.
 
+<img width="417" height="57" alt="Näyttökuva 2026-09-21 kello 10 40 38" src="https://github.com/user-attachments/assets/f4eff4f6-6e76-4227-a965-a12331e4b658" />
 
+Asensin paketinhallinnasta tarvittavat työkalut murtamiseen: `enscript` `ghostscript` ja `qpdf`.
 
+`enscript` muuttaa tekstin PostScriptiksi.
 
+`ghostscript` muuttaa PostScriptin pdf:ksi.
+
+`qpdf` salaa pdf:n.
+
+Etenin työkalujen asentamisen jälkeen komennoilla:
+
+`enscript -p testi.ps testi.txt`
+
+`ps2pdf testi.ps salatestipdf` , ps2pdf on osa `ghostscript`ä
