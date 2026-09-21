@@ -163,6 +163,7 @@ Tallensin sen tiedostoon **oma.hash**.
 
 <img width="639" height="58" alt="Näyttökuva 2026-09-21 kello 13 51 37" src="https://github.com/user-attachments/assets/70f0fc96-efcd-4a82-96d4-552ffed6e98a" />
 
+
 <img width="312" height="77" alt="Näyttökuva 2026-09-21 kello 13 51 43" src="https://github.com/user-attachments/assets/7838fa0e-906f-4581-b845-6a92bdac0c58" />
 
 Syötin komennon `hashcat -m 0 -a 0 oma.hash oma.txt -r oma.rule`
