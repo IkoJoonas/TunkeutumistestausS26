@@ -183,3 +183,7 @@ Karvinen, T. 2022: Cracking Passwords with Hashcat. Luettavissa: https://terokar
 
 Karvinen, T. 2023: Crack File Password With John. Luettavissa: https://terokarvinen.com/2023/crack-file-password-with-john/. Luettu 18.9.2026
 
+Danielmiessler: SecLists. Luettavissa: https://github.com/danielmiessler/seclists. Luettu: 18.9.2026
+
+LabEx. s.a. Use John the Ripper to Crack PDF Documents. Luettavissa: https://labex.io/tutorials/kali-use-john-the-ripper-to-crack-pdf-documents-594220. Luettu: 21.9.2026
+
