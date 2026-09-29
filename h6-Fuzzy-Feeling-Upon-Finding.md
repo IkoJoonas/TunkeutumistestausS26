@@ -61,3 +61,15 @@ Seuraavaksi filtteröin status 200 pois näkyvistä.
 
 Suoritettu.
 
+## c3) Recursion
+
+Suoritin komennon
+
+<img width="953" height="72" alt="c3)" src="https://github.com/user-attachments/assets/535c66f2-ad67-4954-bfd1-53596e5a435b" />
+
+<img width="948" height="814" alt="c3)1" src="https://github.com/user-attachments/assets/50ccf06e-3644-47f9-a7c9-3cb855be90c2" />
+
+Onnistuin.
+
+## c4) Virtual hosts
+
