@@ -82,3 +82,13 @@ Muutin parametrejä ja löysin mielestäni loput kaksi.
 <img width="899" height="28" alt="c4)1" src="https://github.com/user-attachments/assets/f1d273de-3e79-429e-b220-28dd8ddb8b7c" />
 
 <img width="906" height="28" alt="c4)2" src="https://github.com/user-attachments/assets/3e7f76ce-fe2b-44ad-9e0d-749110ba17ea" />
+
+## c9) The login you cannot replay
+
+Aloitin ottamalla curlilla login -sivun tiedot.
+
+<img width="856" height="781" alt="c9)" src="https://github.com/user-attachments/assets/5d2e106c-9477-452d-8d83-b5f812f9517e" />
+
+Tämän jälkeen loin **preflight.txt** tiedoston, jonne lisäsin seuraavanlaisesti.
+
+<img width="508" height="123" alt="c9)1" src="https://github.com/user-attachments/assets/c3196127-b06f-4be2-950d-5638f43848a8" />
