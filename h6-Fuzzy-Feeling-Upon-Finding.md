@@ -113,3 +113,9 @@ Salasana toimi ja tehtävä oli suoritettu.
 ## Lähteet
 
 Karvinen, T. 2026 Tunkeutumistestaus. Luettavissa: https://terokarvinen.com/tunkeutumistestaus/#h6-fuzzy-feeling-upon-finding. Luettu 29.9.2026
+
+Ffuf How to play. Luettavissa: https://ffuf.io.fi/play. Luettu 29.9.2026
+
+ffuf - Fuzz Faster U Fool. Luettavissa: https://github.com/ffuf/ffuf. Luettu 29.9.2026
+
+Hoikkala, J. 2026. Fuzzing with Fuff. Luettavissa: https://terokarvinen.com/tunkeutumistestaus/hoikkala-2026-fuzzing-with-ffuf.pdf. Luettu 29.9.2026
