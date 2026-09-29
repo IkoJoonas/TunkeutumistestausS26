@@ -72,7 +72,7 @@ Suoritin komennon
 
 <img width="948" height="814" alt="c3)1" src="https://github.com/user-attachments/assets/50ccf06e-3644-47f9-a7c9-3cb855be90c2" />
 
-Onnistuin.
+Onnistuin. Rekursiolla löytyi syvemmällä olevia polkuja esim. /backup/**db.sql.bak**
 
 ## c4) Virtual hosts. Three hostnames under ffuf.io.fi serve different content from this same address. Find all three.
 
