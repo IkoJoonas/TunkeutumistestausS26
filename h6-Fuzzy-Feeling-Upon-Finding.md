@@ -104,7 +104,7 @@ Huomasin, että sanamäärä 237 toistuu, joten filtteröin sen pois `-fw 237` p
 
 <img width="829" height="635" alt="c9)3" src="https://github.com/user-attachments/assets/4b25910f-ab1b-4fc5-9921-d53a0d068202" />
 
-Sain näkyville oletetun salasanan.
+Sain näkyville oletetun salasanan **vaultline2026**.
 
 <img width="861" height="381" alt="c9)4" src="https://github.com/user-attachments/assets/1b2e322b-fa0a-4817-bdd0-7fa491a44617" />
 
