@@ -77,7 +77,7 @@ Suoritin kommenon valmiiksi annetuilla flageilla.
 
 <img width="937" height="613" alt="c4)" src="https://github.com/user-attachments/assets/bf55994f-8f33-41d6-b0f8-1d8c73c370f1" />
 
-Muutin parametrejä ja löysin loput kaksi.
+Muutin parametrejä ja löysin mielestäni loput kaksi.
 
 <img width="899" height="28" alt="c4)1" src="https://github.com/user-attachments/assets/f1d273de-3e79-429e-b220-28dd8ddb8b7c" />
 
