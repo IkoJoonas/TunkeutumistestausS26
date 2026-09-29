@@ -89,6 +89,20 @@ Aloitin ottamalla curlilla login -sivun tiedot.
 
 <img width="856" height="781" alt="c9)" src="https://github.com/user-attachments/assets/5d2e106c-9477-452d-8d83-b5f812f9517e" />
 
-Tämän jälkeen loin **preflight.txt** tiedoston, jonne lisäsin seuraavanlaisesti.
+Tämän jälkeen loin **preflight.txt** tiedoston, jonne lisäsin tiedot curlista.
 
 <img width="508" height="123" alt="c9)1" src="https://github.com/user-attachments/assets/c3196127-b06f-4be2-950d-5638f43848a8" />
+
+Ajoin komennon ja tulosteessa oli valtava määrä eri vaihtoehtoja.
+
+<img width="791" height="877" alt="c9)2" src="https://github.com/user-attachments/assets/e4fa613e-7865-43b8-be4d-86adac07f22e" />
+
+Huomasin, että sanamäärä 237 toistuu, joten filtteröin sen pois `-fw 237` parametrillä.
+
+<img width="829" height="635" alt="c9)3" src="https://github.com/user-attachments/assets/4b25910f-ab1b-4fc5-9921-d53a0d068202" />
+
+Sain näkyville oletetun salasanan.
+
+<img width="861" height="381" alt="c9)4" src="https://github.com/user-attachments/assets/1b2e322b-fa0a-4817-bdd0-7fa491a44617" />
+
+Salasana toimi ja tehtävä oli suoritettu.
