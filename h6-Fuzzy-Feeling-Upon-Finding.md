@@ -1,6 +1,9 @@
 ## x) Tiivistä
 
-åwoegjewåog
+Hoikkala 2026: Fuzzing with Fuff, kalvot joohoin esityksestä kurssilta.
+
+- Ffuf:illa voi fuzzata nettisivujen URL:ia, headereita ja dataa
+- Sanalistojen käyttö on suotavaa
 
 ## a) Vaultline
 
@@ -106,3 +109,7 @@ Sain näkyville oletetun salasanan.
 <img width="861" height="381" alt="c9)4" src="https://github.com/user-attachments/assets/1b2e322b-fa0a-4817-bdd0-7fa491a44617" />
 
 Salasana toimi ja tehtävä oli suoritettu.
+
+## Lähteet
+
+Karvinen, T. 2026 Tunkeutumistestaus. Luettavissa: https://terokarvinen.com/tunkeutumistestaus/#h6-fuzzy-feeling-upon-finding. Luettu 29.9.2026
