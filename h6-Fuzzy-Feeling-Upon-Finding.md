@@ -37,3 +37,21 @@ Selasin tulostetta ja päätin filttereidä ne, jotka sisältävät 135 sanaa. F
 
 <img width="602" height="64" alt="c1)1" src="https://github.com/user-attachments/assets/675706ff-b4f6-4823-bb42-9a3069ea6f1c" />
 
+<img width="933" height="325" alt="c1)2" src="https://github.com/user-attachments/assets/3ed9a4a8-d5fb-40d9-b9c3-2881adc6b4f2" />
+
+Selkeyden vuoksi filtteröin vielä status 200 pois lisäämällä `-mc 200` parametrin.
+
+<img width="685" height="62" alt="c1)3" src="https://github.com/user-attachments/assets/5435d3de-e85b-4dcc-922c-b698ff240bd9" />
+
+<img width="930" height="203" alt="c1)4" src="https://github.com/user-attachments/assets/0c136b6a-ab24-4b42-b343-9a718e435506" />
+
+Tehtävän tavoitteeseen päästy.
+
+## c2) The interesting non-200
+
+Aloitin fuzzaamisen ottamalla kaikki status koodit `-mc all`.
+
+<img width="603" height="65" alt="c2)" src="https://github.com/user-attachments/assets/51414e5c-8b2c-4670-a4a7-79c24006408b" />
+
+<img width="930" height="519" alt="c2)1" src="https://github.com/user-attachments/assets/f583f5a4-6feb-4254-89d2-a57ba90a7692" />
+
