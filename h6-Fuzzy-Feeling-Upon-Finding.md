@@ -55,3 +55,9 @@ Aloitin fuzzaamisen ottamalla kaikki status koodit `-mc all`.
 
 <img width="930" height="519" alt="c2)1" src="https://github.com/user-attachments/assets/f583f5a4-6feb-4254-89d2-a57ba90a7692" />
 
+Seuraavaksi filtteröin status 200 pois näkyvistä.
+
+<img width="935" height="654" alt="c2)2" src="https://github.com/user-attachments/assets/9121dfb5-b72a-48de-863c-66637e84b9da" />
+
+Suoritettu.
+
