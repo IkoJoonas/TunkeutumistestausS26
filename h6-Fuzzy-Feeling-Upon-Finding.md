@@ -30,7 +30,7 @@ Asensin menemällä ffuf:in Github sivustolle (https://github.com/ffuf/ffuf) ja 
 
 <img width="581" height="361" alt="ffuf asennus" src="https://github.com/user-attachments/assets/d6520aa5-5797-41f5-ab4c-f56a398658e1" />
 
-## c1) Content discovery
+## c1) Content discovery. Find the paths that exist but are not linked from anywhere.
 
 Aloitin tehtävän lataamalla **content.txt** ja **passwords.txt** tiedostot. Ajoin vinkeissä annetun komennon `ffuf -w content.txt -u https://ffuf.io.fi/FUZZ`.
 
@@ -50,7 +50,7 @@ Selkeyden vuoksi filtteröin vielä status 200 pois lisäämällä `-mc 200` par
 
 Tehtävän tavoitteeseen päästy.
 
-## c2) The interesting non-200
+## c2) The interesting non-200. Two planted paths do not answer 200. One of them a default run will not even consider.
 
 Aloitin fuzzaamisen ottamalla kaikki status koodit `-mc all`.
 
@@ -64,7 +64,7 @@ Seuraavaksi filtteröin status 200 pois näkyvistä.
 
 Suoritettu.
 
-## c3) Recursion
+## c3) Recursion. The wordlist holds names, not paths, so C1 found you 13 things and none of them nested.
 
 Suoritin komennon
 
@@ -74,7 +74,7 @@ Suoritin komennon
 
 Onnistuin.
 
-## c4) Virtual hosts
+## c4) Virtual hosts. Three hostnames under ffuf.io.fi serve different content from this same address. Find all three.
 
 Suoritin kommenon valmiiksi annetuilla flageilla.
 
@@ -86,7 +86,7 @@ Muutin parametrejä ja löysin mielestäni loput kaksi.
 
 <img width="906" height="28" alt="c4)2" src="https://github.com/user-attachments/assets/3e7f76ce-fe2b-44ad-9e0d-749110ba17ea" />
 
-## c9) The login you cannot replay
+## c9) The login you cannot replay. Get into the admin account.
 
 Aloitin ottamalla curlilla login -sivun tiedot.
 
